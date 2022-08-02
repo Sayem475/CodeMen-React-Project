@@ -10,14 +10,12 @@ export default function DateTime({dateUpdated}) {
         let yy = currentdate.getFullYear();
         let hr = currentdate.getHours();
         let mn = currentdate.getMinutes();
-        //let ss = currentdate.getSeconds();
         let ap = hr >= 12 ? 'PM' : 'AM'
         // 12 hour format
         hr = hr > 12 ? hr - 12 : hr;
         // add 0 for single value
         hr = hr < 10 ? '0' + hr : hr;
         mn = mn < 10 ? '0' + mn : mn;
-        // ss = ss < 10 ? '0' + ss : ss;
         var dateTime = dt + '/' + mon + '/' + yy + ' ' + hr + ':' + mn + ap;
         return dateTime;
     }
