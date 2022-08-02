@@ -1,0 +1,66 @@
+$nameText: #000;
+$nameBold: bold;
+$intentFontSize: 14px;
+
+h4 {
+  color: $nameText;
+  font-weight: $nameBold;
+}
+
+p{
+    font-size: $intentFontSize;
+}
+
+.btn-outline-blue {
+  --bs-btn-color: #2702aa;
+  --bs-btn-border-color: #2702aa;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2702aa;
+  --bs-btn-hover-border-color: #2702aa;
+  --bs-btn-focus-shadow-rgb: 25,135,84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #2702aa;
+  --bs-btn-active-border-color: #2702aa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #2702aa;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #2702aa;
+  --bs-gradient: none;
+}
+
+
+.card__container{
+	grid-gap: 2.5rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(5,1fr);
+	margin-bottom: 1rem;
+
+  .text-automated{
+    color: teal;
+  }
+  
+  .text-manual{
+    color:purple;
+  }
+}
+  @media screen and (max-width:1024px)
+{
+	.card__container{
+		gap: 1.2rem;
+		grid-template-columns: repeat(3,1fr) ;
+	}
+}
+@media screen and (max-width:750px){
+	.card__container{
+		gap: 1.2rem;
+		grid-template-columns: 1fr 1fr ;
+	}
+}
+@media screen and (max-width:350px){
+	.card__container{
+		gap: 1.2rem;
+		grid-template-columns: 1fr ;
+	}
+}
+
